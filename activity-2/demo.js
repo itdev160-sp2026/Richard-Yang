@@ -9,6 +9,9 @@ console.log("Subtraction (a - b):\t", a - b);
 console.log("Multiply (a * b):\t", a * b);
 console.log("Divide (a / b):\t", a / b);
 console.log("Modulus (a % b):\t", a % b);
+console.log("Operator Precedance Example - ");
+console.log("No Parentheses:  3 + 4 * 5 =\t", 3 + 4 * 5 );
+console.log("With Parentheses:  (3 + 4) * 5 =\t", (3 + 4) * 5 );
 
 // Part B: Comparison Operators
 console.log("-- Part B: Comparison Operators --");
