@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(15, 15, 15);
+    color: rgb(245, 245, 245);
+    margin: 0px;
+    padding: 20px;
+    border: solid gray;
+}
+
+h1{
+    text-align: center;
+}
+main{
+    text-align: center;
+}
+
+p{
+    display: inline-block;
+    text-align: center;
+}
+
+#checkAge{
+    
+    background-color: rgb(123, 175, 179);
+    color: white;
+    padding: 1em;
+    transition: 0.5s;
+    transform: scale(1.0);
+    
+}
+
+#checkAge:hover{
+    background-color: gray;
+    transition: 0.5s;
+    transform: scale(1.1);
+    
+}
+
+#output{
+    margin-top: 25px;
+    
+}
+
+#result{
+    padding: 15px;
+    color: black;
+    margin: 0% 10% 0% 10%;
+}
+
+#ageInput{
+    padding: 11px;
+    border: solid gray;
+}
+
+.center{
+    padding: 11px;
+    text-align: center;
+}
+
+.adult{
+    background-color: rgb(78, 173, 78);
+}
+
+.minor{
+    background-color: rgb(255, 253, 113);
+}
+
+.invalid{
+    background-color: rgb(255, 97, 97);
+}
