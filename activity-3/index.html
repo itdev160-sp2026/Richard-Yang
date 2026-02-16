@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<head>
+    <title >Activity 3: Dynamic Greeting Card</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Activity 3: Dynamic Greeting Card</h1>
+    </header>
+    <main>
+        <p><b>Open the browser console (F12) to see the DOM manipulation</b></p>
+        <div class="card-container">
+            <h2 id="greeting-message">Click the Buttons!</h2>
+            <!-- Using PicSum Loream Ipsum Random Images-->
+            <img id="greeting-image" src="https://picsum.photos/2500/1667" alt="A Random Image">
+            <div class="controls">
+                <h3>Change Greeting:</h3>
+                <button onclick="setBirthdayGreeting()">Birthday</button>
+                <button onclick="setHolidayGreeting()">Holiday</button>
+                <button onclick="setThankYouGreeting()">Thank You</button>
+                <button onclick="setRandomGreeting()">Random</button>
+            </div>
+            <div class="personalize">
+                <h3>Personalize:</h3>
+                <input type="text" id="nameInput" placeholder="Enter your name">
+                <button onclick="personalizeGreeting()">Add Name</button>
+            </div>
+
+        </div>
+        <div id="output"></div>
+        <button onclick="test()">For Fun</button>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
