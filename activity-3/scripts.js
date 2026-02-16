@@ -22,16 +22,16 @@ console.log(`Found ${allButtons.length} buttons:`, allButtons);
 
 console.log("--Part B: Content Modification--");
 
-console.log("Original message textContent: ", greetMessage.textContent);
-console.log("Original image alt attribute: ", greetImage.getAttribute("alt"));
+console.log("Original message textContent: ", greetMessage.textContent); //get the text 
+console.log("Original image alt attribute: ", greetImage.getAttribute("alt")); //get the image's 'alt' attribute
 
 console.log("--Part C: Attribute Modification-");
 
 console.log("Current image src: ", greetImage.getAttribute("src"));
 console.log("Image has 'src' attribute: ", greetImage.hasAttribute("src"));
 console.log("Current image alt: ", greetImage.getAttribute("alt"));
-greetImage.removeAttribute("alt");
-console.log("Removed image's 'alt' attribute: ", greetImage.getAttribute("alt"));
+greetImage.removeAttribute("alt"); //removes the 'alt' attribute
+console.log("Removed image's 'alt' attribute: ", greetImage.getAttribute("alt")); //displays that it is null because it was removed
 
 const greetings = {
     birthday: {
@@ -102,7 +102,7 @@ function personalizeGreeting() {
     const name = nameInput.value.trim();
 
     if (name === "") {
-        alert("Please enter a name to personalize the greeting!");
+        alert("Please enter a name");
         console.log("Personalization attempted with empty name");
         return;
     }
