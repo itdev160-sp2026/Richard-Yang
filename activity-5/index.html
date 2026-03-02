@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<head>
+    <title>Activity 5: Simple Math Operations Widget</title>
+</head>
+
+<body>
+    <header>
+        <h1>Activity 5: Simple Math Operations Widget</h1>
+    </header>
+    <main>
+        <p><b>Open the browser console (F12) to see the DOM manipulation</b></p>
+        <div class="math-widget">
+            <p>Input two numbers and select an operation to calculate</p>
+            <input type="number" id="number1" placeholder="Enter first number" />
+            <input type="number" id="number2" placeholder="Enter second number" />
+            <button onclick="calculate(add)">Add</button>
+            <button onclick="calculate(subtract)">Subtract</button>
+            <button onclick="calculate(multiply)">Multiply</button>
+            <button onclick="calculate(divide)">Divide</button>
+        </div>
+
+        <div id="result">
+            The Output Will Appear Here
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
