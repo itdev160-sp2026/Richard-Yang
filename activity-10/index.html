@@ -14,25 +14,30 @@
     <main>
         <p><b>Open the browser console (F12) to see the DOM manipulation</b></p>
         <div class="game-container">
-            <div class="game-status" id="status">
-                Current Player: X
+            <div class="game-info">
+                <h2>Tic-Tac-Toe Game</h2>
+                <div class="status-message" id="statusMessage">
+                    Player X's turn
+                </div>
             </div>
-            <div class="game-board">
+
+            <div class="game-board" id="gameBoard">
                 <div class="cell" data-index="0"></div>
                 <div class="cell" data-index="1"></div>
                 <div class="cell" data-index="2"></div>
-
                 <div class="cell" data-index="3"></div>
                 <div class="cell" data-index="4"></div>
                 <div class="cell" data-index="5"></div>
-
                 <div class="cell" data-index="6"></div>
                 <div class="cell" data-index="7"></div>
                 <div class="cell" data-index="8"></div>
             </div>
-            <button id="newGameBtn">New Game</button>
 
+            <div class="game-controls">
+                <button id="newGameBtn" class="btn primary">New Game</button>
+            </div>
         </div>
+
     </main>
 
     <script src="scripts.js"></script>
