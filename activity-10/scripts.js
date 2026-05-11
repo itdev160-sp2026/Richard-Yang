@@ -155,8 +155,7 @@ function updateStatus() {
   const statusElement = document.getElementById("statusMessage");
   statusElement.classList.remove("winner", "draw");
   if (gameState.winner) {
-    //statusElement.textContent = 'Player ${gameState.winner} wins! \uD83C\uDFC6';
-    statusElement.textContent = `Player ${gameState.winner} wins! 🏆`;
+    statusElement.textContent = 'Player '+gameState.winner+ ' wins! \uD83C\uDFC6';
     statusElement.classList.add("winner");
   } else if (!gameState.gameActive) {
     statusElement.textContent = "It's a draw! \uD83E\uDD1D";
@@ -175,7 +174,7 @@ function handleCellClick(event) {
   move(index);
 }
 
-// Initialize application
+
 function initializeApp() {
   console.log("Initializing Tic-Tac-Toe application...");
 
